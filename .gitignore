@@ -1,0 +1,6 @@
+*.ovpn
+*.log
+*.vpn
+
+*.idea
+*.DS_Store
