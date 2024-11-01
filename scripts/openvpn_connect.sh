@@ -46,7 +46,10 @@ laptopItem="BW_ITEM_ID_FOR_SUDO_PASSWORD"
 
 # kill any existing vpn connections
 if tmux has-session -t openvpn 2>/dev/null; then 
-	tmux kill-session -t openvpn 
+	tmux send-keys -t openvpn C-c
+    if tmux has-session -t openvpn 2>/dev/null; then
+        tmux kill-session -t openvpn
+    fi
 	echo "Closed existing session..."
 fi
 

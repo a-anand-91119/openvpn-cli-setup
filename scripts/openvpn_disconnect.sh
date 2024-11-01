@@ -1,6 +1,11 @@
 #!/bin/bash
+
 if tmux has-session -t openvpn 2>/dev/null; then
-    tmux kill-session -t openvpn
+    tmux send-keys -t openvpn C-c
+
+    if tmux has-session -t openvpn 2>/dev/null; then
+        tmux kill-session -t openvpn
+    fi
     echo "Killed active VPN connection"
 else
     echo "No active VPN connections"
