@@ -3,6 +3,11 @@
 > ⚠️ Heads Up! The steps below will automate your 2FA setup, essentially defeating the whole purpose of having 2FA in
 > the first place. Proceed with caution, and perhaps a bit of self-reflection.
 
+
+## Demo
+
+[![asciicast](https://asciinema.org/a/arOHmXSnNzvDqnry49CpuFhKT.svg)](https://asciinema.org/a/arOHmXSnNzvDqnry49CpuFhKT)
+
 ## Pre-requisites
 
 - `tmux`: [get it here](https://github.com/tmux/tmux/wiki/Installing)
